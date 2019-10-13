@@ -21,7 +21,8 @@ public class SelectionSorter extends Sorter {
 				//   element at index, then set index equal to j
 				
 			//5. swap the array element at index with the array element at i
-			
+		display.updateDisplay();
+
 		
 	}
 }
