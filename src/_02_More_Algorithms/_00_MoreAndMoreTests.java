@@ -20,7 +20,10 @@ public class _00_MoreAndMoreTests {
 
 	private Object multiply(int i, int j) {
 		// TODO Auto-generated method stub
-		
+		for (int m = 0; m < 3; m++) {
+			int mul = i*j;
+			return i + " x " + j + " = " + mul;
+		}
 		return null;
 	}
 
@@ -59,13 +62,13 @@ public class _00_MoreAndMoreTests {
 	    assertFalse(isSquare(143));
 //
 	  }
-private boolean isSquare(int t) {
+	private boolean isSquare(int t) {
 		// TODO Auto-generated method stub
-	for (int i = 0; i < t; i++) {
-		if(Math.sqrt(t) == 0) {      //not right
-			
+		for (int i = 0; i < t; i++) {
+			if(t%Math.sqrt(t)==0) {     
+				return true;
+			}
 		}
-	}
 		return false;
 	}
 
@@ -83,8 +86,13 @@ private boolean isSquare(int t) {
 
 	  }
 
-	private boolean isCube(int i) {
+	private boolean isCube(int c) {
 		// TODO Auto-generated method stub
+		for (int i = 0; i < c; i++) {
+			if(c%Math.cbrt(c)==0) {
+				return true;
+			}
+		}
 		return false;
 	}
 
